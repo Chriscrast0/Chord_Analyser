@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="80x75" href="./static/img/nobg 3.png">
+    <link rel="icon" type="image/png" href="../static/img/LOGO.png">
+
+    <title>Faq</title>
+
+    <!-- Download Wow Animation FIle to Run Animations -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="./static/images/fav.png" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <link id="pagestyle" href="../static/css/material-kit.css?v=3.0.0" rel="stylesheet" />
+</head>
+
+<body style="background: url('../static/img/BGFINAL.jfif');
+background-size:cover;
+background-attachment: fixed;">
+  <!-- Navbar -->
+  <div class="container position-sticky z-index-sticky top-0"><div class="row"><div class="col-12">
+    <nav class="navbar navbar-expand-lg border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+      <div class="container-fluid px-0" >
+        <a style="margin-top:0px; width: 90px; height: 50px;" href="{{url_for("index")}}">
+          <img style="width: 100%; height: 100%;" src="../static/img/LOGO.png" >
+        </a>
+        <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mt-2">
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+          <ul class="navbar-nav navbar-nav-hover ms-auto">
+            <li class="nav-item ms-lg-auto">
+              <a class="nav-link nav-link-icon me-2" href="{{url_for('signin')}}" target="_blank">
+                <p class="text-white d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom"  >Sign in</p>
+              </a>
+            </li>
+            <li class="nav-item ms-lg-auto">
+              <a class="nav-link nav-link-icon me-2" href="{{ url_for('profile') }}" target="_blank">
+                <p class="text-white d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip" data-bs-placement="bottom">Profile</p>
+              </a>
+            </li>
+            <li class="nav-item my-auto ms-3 ms-lg-0">
+              <a href="#" class="btn btn-sm mb-0 me-1 mt-2 mt-md-0" style="background-color: #645e99; ">Upgrade to pro</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    </div></div></div>
+    <!--main content-->
+    </div></div></div>
+    <header class="header-2">
+      <div class="page-header relative" style="padding-top: 15%; padding-bottom: 7%;">
+        <div class="container text-center">
+              <h1 class="neon-text pt-3 mt-n5">FAQ</h1>
+              <p class="text-white lead  "><strong>Got a Question? Get your Answer</strong><br> This page provides help with the most common questions about GuitarGuru</p>
+            </div>
+      </div>
+    </header>
+    <section class="faq-area pt-5">
+        <div class="container">
+          <div style="background:rgb(0, 0, 0,0);" class="accordion" id="accordionExample">
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What is GuitarGuru?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  It is an online real time guitar chord detection system which tracks finger positions and generates a music sheet based on chord progression, it can track  a person’s accuracy or can be used to analyse a mp4 video and analyse what someone else is playing.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  What makes GuitarGuru different from other available apps?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Unlike apps which exist that measure the accuracy of their performance using a live instrument, ours measures the accuracy as well as provides real time feedback to the user.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Which chords does GuitarGuru support?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Currently we are support A, C, F and G chords. 
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingfour">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                  What are the minimum requirements to use this application?
+                </button>
+              </h2>
+              <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  A computer or laptop with a decent internet connection with at least 4GB of RAM
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingfive">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                  Which video files does GuitarGuru support?
+                </button>
+              </h2>
+              <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  GuitarGuru supports mp4 file type.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingsix">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                  Is it necessary to upload a mp4 video to GuitarGuru?
+                </button>
+              </h2>
+              <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Yes, it is necessary to upload a mp4 video in order to recognise the finger patterns from the video.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingseven">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                  Does GuitarGuru create a chord sheet for me?
+                </button>
+              </h2>
+              <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingseven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  GuitarGuru identifies the chord played and creates a chord sheet and saves it in the database and we can access it at anytime through the test module.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingeight">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
+                  Where do I find my saved chord sheets?
+                </button>
+              </h2>
+              <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingeight" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  You can access your saved chord sheets in your user profile which can be accessed from the homepage.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingnine">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+                  What happens if my device doesn’t have a camera?
+                </button>
+              </h2>
+              <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingnine" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  GuitarGuru requires a camera to function properly, without a camera it won’t work. You can attach an external camera in order to use GuitarGuru.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingten">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+                  Can I upload my own video and use it later?
+                </button>
+              </h2>
+              <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingten" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Yes you can upload your own video as long as it’s mp4. You can generate a chord sheet of it and also give a test series of your song if its stored in the database.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingeleven">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeleven" aria-expanded="false" aria-controls="collapseeleven">
+                  I want to delete my account, how do I do it?
+
+                </button>
+              </h2>
+              <div id="collapseeleven" class="accordion-collapse collapse" aria-labelledby="headingeleven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Please reach out to support by sending us a mail at guitarguruapp@gmail.com.
+                  We'd love to know why you want to delete your account so please provide feedback.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingtwelve">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwelve" aria-expanded="false" aria-controls="collapsetwelve">
+                  Which instruments can I use with GuitarGuru?
+                </button>
+              </h2>
+              <div id="collapsetwelve" class="accordion-collapse collapse" aria-labelledby="headingtwelve" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  We only support Guitar for now, we plan on bringing more instruments in the future.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingthirteen">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethirteen" aria-expanded="false" aria-controls="collapsethirteen">
+                  How do I create a GuitarGuru account?
+                </button>
+              </h2>
+              <div id="collapsethirteen" class="accordion-collapse collapse" aria-labelledby="headingthirteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Creating an account using the GuitarGuru website:
+                  Head to the GuitarGuru website. On the homepage you have the option to create a new account by entering your name and email address or click 'Log In' in the top right hand corner to create a new Guitar account.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingfourteen">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefourteen" aria-expanded="false" aria-controls="collapsefourteen">
+                  Is GuitarGuru free?
+                </button>
+              </h2>
+              <div id="collapsefourteen" class="accordion-collapse collapse" aria-labelledby="headingfourteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  GuitarGuru is completely free to use.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingfifteen">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefifteen" aria-expanded="false" aria-controls="collapsefifteen">
+                  Why are my Chords not recognized?
+                </button>
+              </h2>
+              <div id="collapsefifteen" class="accordion-collapse collapse" aria-labelledby="headingfifteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Make sure you play the right strings .Check that your fingers are on the right frets and on the right strings. It's easy to make mistakes there even when you're an advanced player. Make sure you strum the strings and check your fretting technique, so each note is clear.
+                </div>
+              </div>
+            </div>
+            <div style="background:rgb(0, 0, 0,0); color: white;" class="accordion-item">
+              <h2 class="accordion-header" id="headingsixteen">
+                <button style="background-color: #afaadf; color: black; font-weight: 600;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesixteen" aria-expanded="false" aria-controls="collapsesixteen">
+                  Having issues with GuitarGuru?
+                </button>
+              </h2>
+              <div id="collapsesixteen" class="accordion-collapse collapse" aria-labelledby="headingsixteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  If you're having a problem with our application, or want to tell us your thoughts about how it's working, you can send a feedback report to us at guitarguruapp@gmail.com
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+    </section>
+    <footer class="footer pt-5 mt-5" style="background-color: #282828;">
+        <div class="container">
+          <div class=" row">
+            <div class="col-md-3 mb-4 ms-auto">
+              <div>
+                <a href="#">
+                </a>
+                <h6 class="font-weight-bolder mb-4" style="color: #afaadf;">GuitarGuru</h6>
+              </div>
+              <div>
+                <ul class="d-flex flex-row ms-n3 nav" style="background-color: #282828;">
+                  <li class="nav-item">
+                    <a class="nav-link pe-1" href="#" target="_blank">
+                      <i class="fab fa-facebook text-lg opacity-8" style="color: rgb(255, 255, 255);"></i>
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link pe-1" href="#" target="_blank">
+                      <i class="fab fa-twitter text-lg opacity-8"style="color: rgb(255, 255, 255);"></i>
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link pe-1" href="#" target="_blank">
+                      <i class="fab fa-github text-lg opacity-8"style="color: rgb(255, 255, 255);"></i>
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link pe-1" href="#" target="_blank">
+                      <i class="fab fa-youtube text-lg opacity-8"style="color: rgb(255, 255, 255);"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+      
+      
+      
+            <div class="col-md-2 col-sm-6 col-6 mb-4">
+              <div>
+                <h6 class="text-sm" style="color: #afaadf;">Company</h6>
+                <ul class="flex-column ms-n3 nav" style="background-color: #282828;">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.creative-tim.com/presentation" target="_blank">
+                      About Us
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.creative-tim.com/templates/free" target="_blank">
+                      Freebies
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.creative-tim.com/templates/premium" target="_blank">
+                      Premium Tools
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+      
+      
+            <div class="col-md-2 col-sm-6 col-6 mb-4">
+              <div>
+                <h6 class="text-sm" style="color: #afaadf;">Help & Support</h6>
+                <ul class="flex-column ms-n3 nav" style="background-color: #282828;">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.creative-tim.com/contact-us" target="_blank">
+                      Contact Us
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.creative-tim.com/knowledge-center" target="_blank">
+                      Knowledge Center
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="https://services.creative-tim.com/?ref=ct-mk2-footer" target="_blank">
+                      Custom Development
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.creative-tim.com/sponsorships" target="_blank">
+                      Sponsorships
+                    </a>
+                  </li>
+      
+                </ul>
+              </div>
+            </div>
+      
+            <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
+              <div>
+                <h6 class="text-sm" style="color: #afaadf;">Legal</h6>
+                <ul class="flex-column ms-n3 nav text-white" style="background-color: #282828;">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.creative-tim.com/knowledge-center/terms-of-service" target="_blank">
+                      Terms & Conditions
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.creative-tim.com/knowledge-center/privacy-policy" target="_blank">
+                      Privacy Policy
+                    </a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.creative-tim.com/license" target="_blank">
+                      Licenses (EULA)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+      
+            <div class="col-12">
+              <div class="text-center">
+                <p class="text-white my-4 text-sm font-weight-normal">
+                  All rights reserved. Copyright © <script>document.write(new Date().getFullYear())</script> GuitarGuru by <a href="#" target="_blank" style="color: #afaadf;">Creative Tim</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>

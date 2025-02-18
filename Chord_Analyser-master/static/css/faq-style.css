@@ -1,0 +1,57 @@
+
+
+.faq-accordion .accordion .card .card-header {
+  padding: 0;
+  border: 0;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  background-color: #120c68;
+}
+
+.faq-accordion .accordion .card .card-header a {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  position: relative;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .faq-accordion .accordion .card .card-header a {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq-accordion .accordion .card .card-header a {
+      font-size: 16px;
+  }
+}
+
+
+.faq-accordion .accordion .card .card-header a::before {
+  content: '\f068';
+  font-family: 'Font Awesome\ 5 Free';
+  position: absolute;
+  right: 0;
+  padding-top: 20px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.faq-accordion .accordion .card .card-header .collapsed::before {
+  content: '\f067';
+}
+
+.faq-accordion .accordion .card .card-body {
+  padding: 20px 20px 0;
+  color: #000000;
+}
+
+.faq-image img {
+  width: 100%;
+}
