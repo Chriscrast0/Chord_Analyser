@@ -1,3 +1,6 @@
+# Chord Analyzer - A revolutionary chord detection system
+# Author: [Your Name]
+# Date: [Current Date]
 import os
 import datetime
 from flask import Flask, redirect, render_template, request, Response, session,url_for, jsonify
@@ -155,7 +158,7 @@ def signin():
                 text = "OPPS!!! Failed to Login \n Try again later"
                 return render_template('error-msg.html',text=text)
         else:
-            text = "PLEASE ENTER CORRECT EMAIL AND PASSWORD WITH 8 OR MORE CHARCHTERS"
+            text = "PLEASE ENTER CORRECT EMAIL AND PASSWORD WITH 8 OR MORE CHARACTERS"
             return render_template('error-msg.html',text=text)
     return render_template('signin.html')
 
